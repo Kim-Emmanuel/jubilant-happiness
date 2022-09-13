@@ -104,6 +104,34 @@
             </div>
         </div>
     </div>
+
+    <form action="#" id="form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Username" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+    </div>
+    <div>
+        <label for="order">Pizza Order:</label>
+        <input type="text" name="order" id="order" placeholder="Enter your order" required>
+    </div>
+    <button class="button">Order</button>
+    </form>
+
+    <div id="list">
+        <h3>Your Order</h3>
+        <ul id="orders"></ul>
+    </div>
+    <div class="location">
+        <p>Click the button to get your coordinates.</p>
+        <div class="location-btn">
+        <button onclick="getLocation()">Click Me</button>
+    </div>
+        <p id="cords"></p>
+    </div>
+    
     <div class="info">
         <p>Welcome to our site <strong>Pizza Delivery</strong></p>
         <p>Make your online order now and We'll deliver at your door</p>
@@ -144,4 +172,3 @@
     <script src="script.js"></script>
 </body>
 </html>
- 
